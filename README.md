@@ -33,19 +33,16 @@ a = <? # Open a CSS template
 
 styles = css()
 styles.pipelist(
-     csss = css()
-     csss.pipelist(
-          csss.pipes # start the pipeline
-          .pipe(render, a) # render the template
-          .pipe(conf, {
-               "root": "./src",
-               "out": "./css.css",
-               "include": ["./src/**/*.py"]
-          }) # configure paths
-          .pipe(minify) # minify the CSS
-          .pipe(dist, open=False) # open=False to prevent automatic opening
-          .pipe(watch) # watch for changes
-     )
+     csss.pipes # start the pipeline
+     .pipe(render, a) # render the template
+     .pipe(conf, {
+          "root": "./src",
+          "out": "./css.css",
+          "include": ["./src/**/*.py"]
+     }) # configure paths
+     .pipe(minify) # minify the CSS
+     .pipe(dist, open=False) # open=False to prevent automatic opening
+     .pipe(watch) # watch for changes
 )
 ```
 
