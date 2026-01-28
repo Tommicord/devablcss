@@ -52,7 +52,7 @@ styles.pipelist(
 And you execute in terminal:
 
 ```bash
-devably your_file.py
+devabl your_file.py
 ```
 
 This will generate a minified CSS file at `./styles/app.css` based on the condition provided.
