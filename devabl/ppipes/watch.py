@@ -1,4 +1,4 @@
-from devabl.css import css
+from devabl.cssc import css
 from devabl.pipe import pipe
 import time
 import logging
@@ -12,7 +12,7 @@ class watch(pipe):
      name: str = "pipes.watch"
      needsContext: bool = True
 
-     def __init__(self, context: css, max_files: int=1024, seconds: float | int=0.773444534):
+     def __init__(self, context: css, max_files: int = 1024, seconds: float | int = 0.773444534):
           logging.basicConfig(level=logging.INFO,
                               format='%(asctime)s - %(message)s',
                               datefmt='%Y-%m-%d %H:%M:%S')
@@ -22,10 +22,10 @@ class watch(pipe):
           else:
                os.system('clear')
           time.sleep(0.4)
-          self.files: list[str] = []
+          self.files: list[pathlib.Path] = []
           self.running: bool = True
           self._src = context.pipes.get("pipes.conf")["root"]
-          self._cached_stamps: list[int] = [x for x in range(max_files)]
+          self._cached_stamps: list[float] = [x for x in range(max_files)]
           self._path: pathlib.Path = pathlib.Path()
 
           print("Building...")
@@ -39,7 +39,7 @@ class watch(pipe):
                try:
                     time.sleep(seconds)
 
-                    files: list[str] = []
+                    files: list[pathlib.Path] = []
                     for include in context.pipes.get("pipes.conf")["include"]:
                          for file in self._path.glob(include):
                               files.append(file)
@@ -48,7 +48,7 @@ class watch(pipe):
                     changed = False
 
                     for i, file in enumerate(self.files):
-                         stamp: int = os.stat(file).st_mtime
+                         stamp: float = os.stat(file).st_mtime
                          if stamp != self._cached_stamps[i]:
                               changed=True
                               self._cached_stamps[i] = stamp

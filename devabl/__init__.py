@@ -1,10 +1,10 @@
-from devabl.ppipes.conf import conf as _conf
-from devabl.ppipes.dist import dist as _dist
-from devabl.ppipes.minify import minify as _minify
-from devabl.ppipes.watch import watch as _watch
+from devabl.ppipes import conf as _conf
+from devabl.ppipes import dist as _dist
+from devabl.ppipes import minify as _minify
+from devabl.ppipes import watch as _watch
 from devabl.pipe import pipe as _pipe
 from devabl.pipes import pipes as _pipes
-from devabl.css import css as _css
+from devabl.cssc import css as _css
 
 __name__ = "devable"
 __package__ = "devable"

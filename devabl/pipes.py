@@ -7,8 +7,8 @@ class pipes:
 
      def pipe(self, fn: 'pipe', *args: tuple[any], **kwargs: dict[str, any]) -> 'pipes':
           try:
-               if(isinstance(fn, pipe) or fn.__bases__[0] == pipe):
-                    if(fn.needsContext):
+               if isinstance(fn, pipe) or fn.__bases__[0] == pipe:
+                    if fn.needsContext:
                          self.res[fn.name] = fn(self.context, *args, **kwargs)
                     else:
                          self.res[fn.name] = fn(*args, **kwargs)

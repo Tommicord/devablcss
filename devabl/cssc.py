@@ -10,3 +10,6 @@ class css:
           
      def debug(self) -> None:
           self.pipes.debug()
+
+     def show(self) -> str:
+         pass # TODO : Create show method

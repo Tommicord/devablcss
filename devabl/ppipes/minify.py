@@ -1,5 +1,5 @@
 from devabl.pipe import pipe
-from devabl.css import css
+from devabl.cssc import css
 
 import re
 
