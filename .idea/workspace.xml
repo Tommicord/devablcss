@@ -4,9 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbcd4f0f-08d6-4a72-b7b0-868182da035b" name="Changes" comment="Added gitignore file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devabl/css/csssel.py" beforeDir="false" afterPath="$PROJECT_DIR$/devabl/css/csssel.py" afterDir="false" />
+    <list default="true" id="bbcd4f0f-08d6-4a72-b7b0-868182da035b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/devable.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devabl/css/block.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devabl/css/cssproperty.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devabl/css/csssel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devabl/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/devabl/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devabl/css.py" beforeDir="false" afterPath="$PROJECT_DIR$/devabl/cssc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devabl/pipes.py" beforeDir="false" afterPath="$PROJECT_DIR$/devabl/pipes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devabl/ppipes/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/devabl/ppipes/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devabl/ppipes/dist.py" beforeDir="false" afterPath="$PROJECT_DIR$/devabl/ppipes/dist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devabl/ppipes/minify.py" beforeDir="false" afterPath="$PROJECT_DIR$/devabl/ppipes/minify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devabl/ppipes/watch.py" beforeDir="false" afterPath="$PROJECT_DIR$/devabl/ppipes/watch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +50,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.csssel.executor": "Run",
+    "Python.csssel.executor": "Debug",
     "Python.devably.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -114,15 +130,6 @@
       <option name="presentableId" value="Default" />
       <updated>1769632299928</updated>
     </task>
-    <task id="LOCAL-00001" summary="Added gitignore file">
-      <option name="closed" value="true" />
-      <created>1769814200722</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1769814200722</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,9 +142,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added gitignore file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added gitignore file" />
   </component>
 </project>
