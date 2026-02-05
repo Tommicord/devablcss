@@ -23,9 +23,3 @@ class pipes:
           except KeyError:
                print(f"Fatal Error: Key '{k}' not found in pipelist")
                return None
-          
-     def debug(self) -> None:
-          str = "Pipes Debug Info:\n\n"
-          for k, v in self.res.items():
-               str += f"{k}   >>>   {v.__repr__()}\n"
-          print(str)

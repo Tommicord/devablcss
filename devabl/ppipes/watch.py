@@ -13,6 +13,7 @@ class watch(pipe):
      needsContext: bool = True
 
      def __init__(self, context: css, max_files: int = 1024, seconds: float | int = 0.773444534):
+          super().__init__(self.name)
           logging.basicConfig(level=logging.INFO,
                               format='%(asctime)s - %(message)s',
                               datefmt='%Y-%m-%d %H:%M:%S')
